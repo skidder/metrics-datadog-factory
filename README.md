@@ -12,6 +12,7 @@ Usage:
   <version>0.0.1-SNAPSHOT</version>
 </dependency>
 ```
+
 2. Register the factory in your DropWizard Application's `initialize` method:
 ```
 public class MyApplication extends
@@ -22,6 +23,7 @@ public class MyApplication extends
         registerJacksonSubTypes();
     }
 ```
+
 3. Include the 'datadog' metric in the DropWizard configuration file using the [Metrics Configuration](https://dropwizard.github.io/dropwizard/manual/configuration.html#metrics) section:
 ```
 metrics:
