@@ -1,9 +1,9 @@
 metrics-datadog-factory
 =======================
 
-Factory for registering DataDog metrics reporters in a DropWizard application.
+Factory for registering [DataDog](http://www.datadoghq.com/) metrics reporters in a [DropWizard](http://www.dropwizard.io/) application.
 
-##Usage:
+##Usage
 
 1. Add the metrics-datadog-factory dependency to your Maven POM:
 
