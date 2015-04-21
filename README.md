@@ -3,7 +3,8 @@ metrics-datadog-factory
 
 Factory for registering DataDog metrics reporters in a DropWizard application.
 
-Usage:
+##Usage:
+
 1. Add the metrics-datadog-factory dependency to your Maven POM:
 ```xml
 <dependency>
@@ -12,9 +13,8 @@ Usage:
   <version>0.0.1-SNAPSHOT</version>
 </dependency>
 ```
-
 2. Register the factory in your DropWizard Application's `initialize` method:
-```
+```java
 public class MyApplication extends
         Application<MyConfiguration> {
 
@@ -23,9 +23,8 @@ public class MyApplication extends
         registerJacksonSubTypes();
     }
 ```
-
 3. Include the 'datadog' metric in the DropWizard configuration file using the [Metrics Configuration](https://dropwizard.github.io/dropwizard/manual/configuration.html#metrics) section:
-```
+```yaml
 metrics:
   reporters:
     - type: datadog
